@@ -1,0 +1,136 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+.game-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.game-title {
+  text-align: center;
+}
+
+.guess-stats {
+  margin: 20px 0;
+}
+
+.word-display {
+  font-size: 30px;
+}
+
+.guess-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.guess-form label {
+  margin-bottom: 10px;
+}
+
+#guess-input {
+  width: 200px;
+  text-align: center;
+  font-size: 20px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+#guess-input:focus {
+  border-color: palevioletred;
+  box-shadow: 0px 0px 5px 0px palevioletred;
+  outline: none;
+  transition: all 0.5s ease;
+}
+
+#guess-button {
+  width: 200px;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+
+#guess-button:hover {
+  background-color: #0056b3;
+  box-shadow: 0px 0px 5px 0px royalblue;
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+.new-game-button {
+  width: 200px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+
+.new-game-button:hover {
+  background-color: #0056b3;
+  box-shadow: 0px 0px 5px 0px royalblue;
+  transform: scale(1.02);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.guess-history {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.guess-history ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.guess-history li {
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  min-width: 40px;
+}
+
+.guess-history li.correct {
+  color: mediumseagreen;
+}
+
+.guess-history li.incorrect {
+  color: palevioletred;
+}
+
+/* New Feature */
+.timer {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 45px;
+  font-weight: bold;
+  color: royalblue;
+  background-color: lightblue;
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+}
